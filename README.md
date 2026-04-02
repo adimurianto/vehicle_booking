@@ -40,3 +40,6 @@
 2. Masukkan username dan password sesuai dengan role
 
 ## Struktur Database
+
+<img width="2125" height="809" alt="Screenshot 2026-04-02 at 11 39 41" src="https://github.com/user-attachments/assets/8112f5c2-adac-4859-8105-951c6857a002" />
+

@@ -1,0 +1,35 @@
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
+/*
+ * Translated default messages for the jQuery validation plugin.
+ * Locale: MY (Malay; Melayu)
+ */
+$.extend( $.validator.messages, {
+	required: "Medan ini diperlukan.",
+	remote: "Sila betulkan medan ini.",
+	email: "Silahkan input alamat emel yang betul.",
+	url: "Silahkan input URL yang betul.",
+	date: "Silahkan input tarikh yang betul.",
+	dateISO: "Silahkan input tarikh(ISO) yang betul.",
+	number: "Silahkan input nombor yang betul.",
+	digits: "Silahkan input nilai digit sahaja.",
+	creditcard: "Silahkan input nombor kredit kad yang betul.",
+	equalTo: "Silahkan input nilai yang sama semula.",
+	extension: "Silahkan input nilai yang telah diterima.",
+	maxlength: $.validator.format( "Silahkan input tidak lebih dari {0} aksara." ),
+	minlength: $.validator.format( "Silahkan input sekurang-kurangnya {0} aksara." ),
+	rangelength: $.validator.format( "Silahkan input antara {0} dan {1} panjang aksara." ),
+	range: $.validator.format( "Silahkan input nilai antara {0} dan {1} aksara." ),
+	max: $.validator.format( "Silahkan input nilai yang kurang atau sama dengan {0}." ),
+	min: $.validator.format( "Silahkan input nilai yang lebih atau sama dengan {0}." )
+} );
+return $;
+}));
